@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luke Samantha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
+    body,
+    html {
+      margin: 0;
+    }
+
+    .wrapper {
+      padding-top: 30vh;
+      width: 300px;
+      margin: auto;
+    }
+
+    pre {
+      margin: 0
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="hi">Hi Luke Samantha!</h1>
+    <pre class="samantha">
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha  
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha  
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha  
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha  
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha
+    Luke = Luke Samantha</pre>
+  </div>
+
+  <script>
+    const wrapper = document.querySelector('.wrapper');
+    const legs = document.querySelector('.samantha');
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          injectLeg(entry)
+        }
+      });
+    }, {
+      rootMargin: "0px 0px 300% 0px"
+    });
+    let injectLeg = entry => {
+      observer.unobserve(entry.target);
+      const clonedLegs = legs.cloneNode(true);
+      wrapper.appendChild(clonedLegs);
+      observer.observe(clonedLegs)
+    }
+    observer.observe(legs)
+  </script>
+</body>
+
+</html>
